@@ -4,73 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini portifólio</title>
+    <title>Pokémon - Cards</title>
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="./src/img/pokebola.png" type="image/x-icon">
+
 </head>
 
 <body>
-    <main class="cartao">
-        <div class="minhas-informacoes">
-            <img src="./src/img/vallias.png" , alt="Foto de perfil">
-            <h1 class="nome">Maria Valias</h1>
-            <h2 class="cargo">Desenvolvedora Frontend Júnior</h2>
-        </div>
+    <header class="cabecalho">
+        <img src="./src/img/pokebola.png" alt="pokebola" class="pokebola">
+        <h1 class="titulo">Pokémon</h1>
+    </header>
 
-        <div class="conteudo">
-            <ul class="abas">
-                <li class="aba selecionada" id="sobre-mim"> 
-                    <img src="./src/img/sobre-descricao.gif" alt="Descrição sobre mim">
-                </li>
+    <main class="pokemon-slider">
+        <button class="btn-seta btn-voltar">
+            <img src="./src/img/seta.png" alt="voltar" id="seta-voltar">
+        </button>
 
-                <li class="aba" id="redes-sociais">
-                    <img src="./src/img/redes-sociais.gif" alt="Minhas redes socias">
-                </li>
-            </ul>
+        <ul class="lista-pokemons">
+            <li class="cartao fundo-1 selecionado">
+                <div class="informacoes">
+                    <h2 class="nome">Mewtwo</h2>
+                    <p class="vida">HP 1200</p>
+                </div>
 
-            <div class="informacoes-abas">
-                <div class="informacao selecionada" id="informacao-sobre-mim">
-                    <h3 class="sub-titulo">Sobre mim</h3>
+                <div class="container-img">
+                    <img src="./src/img/mewtwo.png" alt="mewtwo" class="img-pokemon">
+                </div>
+
+                <div class="descricao scrollbox">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">20 anos atrás, uma música costumava ser tocada em um lugar da América do Sul.
+                        Pessoas diziam que um Pokémon vivia entre as montanhas e lagos. Dizem que o Pokémon é corajoso e
+                        forte e fez muito pelos humanos no passado. A tal música foi feita para homenagear o Pokémon,
+                        Mew.
+
+                        A Equipe Rocket (liderada por Madame Boss naquele tempo) pretendia capturar Mew e assim
+                        conseguir muito dinheiro. Madame Boss enviou 3 pessoas, que eram lideradas por Miyamoto (a mãe
+                        de Jessie), para capturar o Mew. Miyamoto se separa da equipe e fica perdida pela Cordilheira
+                        dos Andes. Ela avista Mew, mas quando ela iria capturá-lo, ele desaparece e a nevasca no local
+                        acaba gerando uma avalanche que cai em Miyamoto.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo-2">
+                <div class="informacoes">
+                    <h2 class="nome">Charizard</h2>
+                    <p class="vida">HP 800</p>
+                </div>
+
+                <div class="container-img">
+                    <img src="./src/img/charizard.png" alt="charizard" class="img-pokemon">
+                </div>
+
+                <div class="descricao scrollbox">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus in porro minima totam
+                        voluptatum iure nobis illum unde! Expedita corporis sapiente labore architecto aliquam odit
+                        totam officia numquam quibusdam.
                     
-                    <div class="sobre-descricao">
+                    </p>
+                </div>
+            </li>
 
-                        <p>Olá! Meu nome é Maria Valias, seja bem vindo(a).
-
-                        </p>
-    
-                        <p>Comecei na programação aos 15 anos, desde então o meu sonho é trabalalhar com programação e
-                            atualmente comecei a colocar esse sonho em prática estudando <span>HTML, CSS e JavaScript</span>.
-                        </p>
-
-                    </div>
-
+            <li class="cartao fundo-3">
+                <div class="informacoes">
+                    <h2 class="nome">Pikachu</h2>
+                    <p class="vida">HP 500</p>
                 </div>
 
-                <div class="informacao" id="informacao-redes-sociais">
-                    <h3 class="sub-titulo">Minhas redes</h3>
-
-                    <ul class="redes-sociais">
-                        <li>
-                            <a href="" target="_blank" class="curriculo">Currículo</a>
-                        </li>
-
-                        <li>
-                            <a href="" target="_blank" class="linkedin">Linkedin</a>
-                        </li>
-
-                        <li>
-                            <a href="" target="_blank" class="github">Github</a>
-                        </li>
-                    </ul>
+                <div class="container-img">
+                    <img src="./src/img/pikachu.png" alt="pikachu" class="img-pokemon">
                 </div>
-            </div>
-        </div>
+
+                <div class="descricao scrollbox">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus in porro minima totam
+                        voluptatum iure nobis illum unde! Expedita corporis sapiente labore architecto aliquam odit
+                        totam officia numquam quibusdam.</p>
+                </div>
+            </li>
+        </ul>
+
+        <button class="btn-seta">
+            <img src="./src/img/seta.png" alt="avançar" id="seta-avancar">
+        </button>
     </main>
 
     <script src="./src/js/index.js"></script>
